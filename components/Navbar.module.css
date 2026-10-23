@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   z-index: 50;
-  background: rgba(4, 19, 33, 0.86);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 1px solid rgba(7, 27, 49, 0.14);
 }
 
 .navContainer {
@@ -50,7 +50,7 @@
 }
 
 .navLink {
-  color: var(--text-muted);
+  color: var(--background-deep);
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -70,15 +70,15 @@
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.65rem;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--foreground);
+  background: rgba(7, 27, 49, 0.06);
+  color: var(--background-deep);
   cursor: pointer;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .mobileToggle:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(7, 27, 49, 0.12);
+  border-color: rgba(7, 27, 49, 0.3);
 }
 
 .toggleBar {
@@ -144,6 +144,6 @@
   .navLinksOpen {
     display: flex;
     padding: 1.25rem 0 0.5rem;
-    border-top: 1px solid var(--card-border);
+    border-top: 1px solid rgba(7, 27, 49, 0.14);
   }
 }
