@@ -17,14 +17,22 @@ export default function Navbar() {
         </div>
 
         <button
-          className={styles.mobileToggle}
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          type="button"
+          className={`${styles.mobileToggle} ${isOpen ? styles.mobileToggleOpen : ""}`}
+          onClick={() => setIsOpen((open) => !open)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
-          {isOpen ? "X" : "Menu"}
+          <span className={styles.toggleBar} />
+          <span className={styles.toggleBar} />
+          <span className={styles.toggleBar} />
         </button>
 
-        <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ""}`}>
+        <div
+          id="mobile-navigation"
+          className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ""}`}
+        >
           <Link href="#home" className={styles.navLink} onClick={() => setIsOpen(false)}>Home</Link>
           <Link href="#about" className={styles.navLink} onClick={() => setIsOpen(false)}>About Us</Link>
           <Link href="#services" className={styles.navLink} onClick={() => setIsOpen(false)}>Products &amp; Services</Link>

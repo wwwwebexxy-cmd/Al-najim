@@ -126,6 +126,9 @@
     font-size: 0.875rem;
     margin: 0 auto;
   }
+  .socialLinks {
+    justify-content: center;
+  }
   .columnTitle {
     font-size: 1rem;
   }
