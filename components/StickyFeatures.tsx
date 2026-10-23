@@ -4,12 +4,12 @@ import styles from "./StickyFeatures.module.css";
 import ScrollReveal from "./ScrollReveal";
 
 const features = [
-  { id: 1, title: "Warehouse Racking", description: "Material handling systems for warehousing and storage facilities.", image: "/media/image-080.jpeg" },
-  { id: 2, title: "Supermarket Shelving", description: "Shelving and storage systems for distribution centres.", image: "/media/image-055.jpeg" },
-  { id: 3, title: "Mezzanine Flooring", description: "Mezzanine flooring with rack support for efficient storage.", image: "/media/image-066.jpeg" },
-  { id: 4, title: "Aluminium Fabrication", description: "Fabrication solutions planned around your operational needs.", image: "/media/image-070.jpeg" },
-  { id: 5, title: "Car Parking Sheds", description: "Shade structures and car parking sheds for practical protection.", image: "/media/image-060.jpeg" },
-  { id: 6, title: "Interior Decor", description: "Interior decor solutions to complete commercial environments.", image: "/media/image-076.jpeg" },
+  { id: 1, title: "Warehouse Racking", description: "Material handling systems for warehousing and storage facilities.", image: "/media/image-080.webp" },
+  { id: 2, title: "Supermarket Shelving", description: "Shelving and storage systems for distribution centres.", image: "/media/image-055.webp" },
+  { id: 3, title: "Mezzanine Flooring", description: "Mezzanine flooring with rack support for efficient storage.", image: "/media/image-066.webp" },
+  { id: 4, title: "Aluminium Fabrication", description: "Fabrication solutions planned around your operational needs.", image: "/media/image-070.webp" },
+  { id: 5, title: "Car Parking Sheds", description: "Shade structures and car parking sheds for practical protection.", image: "/media/image-060.webp" },
+  { id: 6, title: "Interior Decor", description: "Interior decor solutions to complete commercial environments.", image: "/media/image-076.webp" },
 ];
 
 export default function StickyFeatures() {
@@ -29,7 +29,7 @@ export default function StickyFeatures() {
           </div>
           <div className={styles.imageContent}>
             <ScrollReveal direction="left" delay={0.2}>
-              <img src="/media/image-080.jpeg" alt="Al Najim material handling and storage solutions" className={styles.mainImage} />
+              <img src="/media/image-080.webp" alt="Al Najim material handling and storage solutions" className={styles.mainImage} />
             </ScrollReveal>
           </div>
         </div>

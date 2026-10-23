@@ -1,3 +1,4 @@
+import { FaLinkedinIn } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -13,6 +14,17 @@ export default function Footer() {
           <p className={styles.description}>
             A Complete Storage Solution for material handling, warehousing and storage facilities.
           </p>
+          <div className={styles.socialLinks} aria-label="Social links">
+            <a
+              href="https://www.linkedin.com/company/alnajimalsatie/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialIcon}
+              aria-label="Al Najim Al Satie Trading on LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
 
         <div className={styles.linksGroup}>

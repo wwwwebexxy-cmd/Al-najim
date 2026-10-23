@@ -8,14 +8,14 @@ export default function About() {
         <div className={styles.imageWrapper}>
           <ScrollReveal direction="right" className={styles.imageMain}>
             <img
-              src="/media/image-023.jpeg"
+              src="/media/image-023.webp"
               alt="Industrial warehouse racking system"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </ScrollReveal>
           <ScrollReveal direction="left" delay={0.3} className={styles.imageOverlap}>
             <img
-              src="/media/image-062.jpeg"
+              src="/media/image-062.webp"
               alt="Material handling and storage solution"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />

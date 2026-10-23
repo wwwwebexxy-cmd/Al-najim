@@ -21,5 +21,6 @@ export default function robots(): MetadataRoute.Robots {
       }
     ],
     sitemap: "https://www.steelrack.co/sitemap.xml",
+    host: "https://www.steelrack.co",
   };
 }

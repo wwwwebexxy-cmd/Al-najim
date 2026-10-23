@@ -23,7 +23,6 @@ export default function OurClients() {
           {industries.map((industry, index) => (
             <ScrollReveal key={industry.title} direction="up" delay={0.1 + (index * 0.1)}>
               <article className={styles.industryCard}>
-                <span className={styles.industryNumber}>0{index + 1}</span>
                 <h3 className={styles.industryTitle}>{industry.title}</h3>
                 <p className={styles.industryDescription}>{industry.description}</p>
               </article>

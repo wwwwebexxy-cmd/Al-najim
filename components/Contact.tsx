@@ -1,6 +1,6 @@
 "use client";
 
-import { FaBuilding, FaEnvelope, FaGlobe, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaBuilding, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 import ScrollReveal from "./ScrollReveal";
 
@@ -42,16 +42,22 @@ export default function Contact() {
         </div>
 
         <div className={styles.mapColumn}>
-          <ScrollReveal direction="left" delay={0.2} className={styles.contactCard}>
-            <img src="/al-najim-logo.png" alt="Al Najim Al Satie Steel Shelfs Trading" className={styles.contactLogo} />
-            <p className={styles.contactTagline}>A Complete Storage Solution</p>
-            <div className={styles.websiteLine}>
-              <FaGlobe />
-              <a href="https://www.steelrack.co" target="_blank" rel="noopener noreferrer">www.steelrack.co</a>
-            </div>
-            <p className={styles.contactNote}>
-              Planning and executing material handling systems to reduce cost and increase customer satisfaction.
-            </p>
+          <ScrollReveal direction="left" delay={0.2} className={styles.mapCard}>
+            <iframe
+              className={styles.mapFrame}
+              title="Al Najim Al Satie Steel Shelves Trading location"
+              src="https://www.google.com/maps?q=25.2916171,55.4475669&z=17&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <a
+              className={styles.mapLink}
+              href="https://maps.app.goo.gl/eFdiiW3SESDivbUR6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in Google Maps
+            </a>
           </ScrollReveal>
         </div>
       </div>

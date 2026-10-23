@@ -2,18 +2,18 @@ import styles from "./Services.module.css";
 import ScrollReveal from "./ScrollReveal";
 
 const services = [
-  { title: "Pallet Racks", image: "/media/image-001.jpeg" },
-  { title: "Heavy Duty Racks", image: "/media/image-057.jpeg" },
-  { title: "Supermarket Shelving & Storage System", image: "/media/image-055.jpeg" },
-  { title: "Slotted Angle Shelves", image: "/media/image-087.jpeg" },
-  { title: "Mezzanine Flooring with Rack Support", image: "/media/image-066.jpeg" },
-  { title: "Aluminium Fabrication", image: "/media/image-070.jpeg" },
-  { title: "Structural Fabrication", image: "/media/image-010.jpeg" },
-  { title: "MS Stainless Steel Fabrication", image: "/media/image-072.jpeg" },
-  { title: "Car Parking Sheds", image: "/media/image-002.jpeg" },
-  { title: "Fence Cabana with Wooden Bench", image: "/media/image-005.jpeg" },
-  { title: "Retractable Shades", image: "/media/image-064.jpeg" },
-  { title: "Interior Decor", image: "/media/image-076.jpeg" },
+  { title: "Pallet Racks", image: "/media/image-001.webp" },
+  { title: "Heavy Duty Racks", image: "/media/image-057.webp" },
+  { title: "Supermarket Shelving & Storage System", image: "/media/image-055.webp" },
+  { title: "Slotted Angle Shelves", image: "/media/image-087.webp" },
+  { title: "Mezzanine Flooring with Rack Support", image: "/media/image-066.webp" },
+  { title: "Aluminium Fabrication", image: "/media/image-070.webp" },
+  { title: "Structural Fabrication", image: "/media/image-010.webp" },
+  { title: "MS Stainless Steel Fabrication", image: "/media/image-072.webp" },
+  { title: "Car Parking Sheds", image: "/media/image-002.webp" },
+  { title: "Fence Cabana with Wooden Bench", image: "/media/image-005.webp" },
+  { title: "Retractable Shades", image: "/media/image-064.webp" },
+  { title: "Interior Decor", image: "/media/image-076.webp" },
 ];
 
 export default function Services() {

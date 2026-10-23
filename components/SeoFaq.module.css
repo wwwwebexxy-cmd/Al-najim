@@ -1,0 +1,52 @@
+.section {
+  background: var(--background);
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item {
+  border: 1px solid var(--card-border);
+  border-radius: 0.85rem;
+  background: var(--card-bg);
+  overflow: hidden;
+}
+
+.item summary {
+  cursor: pointer;
+  padding: 1.2rem 1.4rem;
+  color: var(--foreground);
+  font-weight: 700;
+  list-style-position: inside;
+}
+
+.item summary::marker {
+  color: var(--primary);
+}
+
+.item p {
+  margin: 0;
+  padding: 0 1.4rem 1.3rem 2.2rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.item[open] {
+  border-color: var(--primary);
+}
+
+@media (max-width: 640px) {
+  .item summary {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .item p {
+    padding: 0 1rem 1rem 1.75rem;
+    font-size: 0.9rem;
+  }
+}

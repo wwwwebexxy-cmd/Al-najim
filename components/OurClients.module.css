@@ -21,13 +21,6 @@
   border-color: var(--primary);
 }
 
-.industryNumber {
-  margin-bottom: auto;
-  color: var(--primary);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.9rem;
-}
-
 .industryTitle {
   margin: 0 0 0.75rem;
   color: var(--foreground);

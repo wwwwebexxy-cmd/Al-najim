@@ -4,7 +4,8 @@
 
 .videoGrid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -24,13 +25,6 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
-}
-
-.videoCard figcaption,
-.imageCard figcaption {
-  padding: 0.8rem 1rem;
-  color: var(--text-muted);
-  font-size: 0.9rem;
 }
 
 .galleryGrid {
@@ -73,9 +67,4 @@
     grid-template-columns: 1fr;
   }
 
-  .videoCard figcaption,
-  .imageCard figcaption {
-    padding: 0.65rem 0.75rem;
-    font-size: 0.78rem;
-  }
 }
