@@ -1,30 +1,54 @@
-.logoGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.industryGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.logoWrapper {
-  background-color: white; /* Ensures transparent or dark logos are visible on dark background */
-  border-radius: 0.75rem;
+.industryCard {
+  min-height: 220px;
   padding: 1.5rem;
-  width: 220px;
-  height: 140px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  background: linear-gradient(145deg, rgba(18, 59, 92, 0.82), rgba(7, 27, 49, 0.88));
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.logoWrapper:hover {
-  transform: translateY(-5px);
+.industryCard:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
 }
 
-.logoImage {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.industryNumber {
+  margin-bottom: auto;
+  color: var(--primary);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.9rem;
+}
+
+.industryTitle {
+  margin: 0 0 0.75rem;
+  color: var(--foreground);
+  font-size: 1.25rem;
+}
+
+.industryDescription {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .industryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .industryGrid {
+    grid-template-columns: 1fr;
+  }
 }

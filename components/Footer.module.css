@@ -1,5 +1,5 @@
 .footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(4, 19, 33, 0.92);
   border-top: 1px solid var(--card-border);
   padding-top: 4rem;
   margin-top: 4rem;
@@ -22,7 +22,17 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--foreground);
+  display: inline-flex;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+.logoImage {
+  display: block;
+  width: min(250px, 100%);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.95));
 }
 
 .description {
@@ -86,7 +96,7 @@
   background: var(--primary);
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); /* matching potential primary color vibe */
+  box-shadow: 0 5px 15px var(--primary-glow);
 }
 
 @media (max-width: 768px) {
@@ -106,6 +116,11 @@
   }
   .logo {
     font-size: 1.25rem;
+  }
+
+  .logoImage {
+    width: min(215px, 82vw);
+    margin: 0 auto;
   }
   .description {
     font-size: 0.875rem;

@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       }
     ],
-    sitemap: "https://shapesandshades.ae/sitemap.xml",
+    sitemap: "https://www.steelrack.co/sitemap.xml",
   };
 }

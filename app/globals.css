@@ -1,12 +1,18 @@
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --primary: #c5a880;
-  --primary-glow: rgba(197, 168, 128, 0.5);
-  --secondary: #e6d3b3;
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
-  --text-muted: #a1a1aa;
+  /* Al Najim Al Satie brochure palette: navy, teal, orange and silver. */
+  --background: #071b31;
+  --background-deep: #041321;
+  --foreground: #f5f8fb;
+  --primary: #ff9d1b;
+  --primary-hover: #f38b0b;
+  --primary-glow: rgba(255, 157, 27, 0.34);
+  --secondary: #087f87;
+  --secondary-light: #47b4b5;
+  --surface: #0b2945;
+  --surface-raised: #123b5c;
+  --card-bg: rgba(18, 59, 92, 0.64);
+  --card-border: rgba(71, 180, 181, 0.26);
+  --text-muted: #b9c9d6;
 }
 
 html {
@@ -22,6 +28,29 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.site-shell,
+.brand-section {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.brand-strip {
+  background-color: var(--surface);
+  border-color: var(--card-border);
+}
+
+.text-brand-muted {
+  color: var(--text-muted);
+}
+
+.text-brand-accent {
+  color: var(--secondary-light);
+}
+
+.text-brand-ink {
+  color: rgba(245, 248, 251, 0.07);
 }
 
 * {
@@ -42,7 +71,7 @@ button {
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: linear-gradient(90deg, var(--primary), var(--secondary-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -1,89 +1,54 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import styles from "./StickyFeatures.module.css";
 import ScrollReveal from "./ScrollReveal";
 
 const features = [
-  {
-    id: 1,
-    title: "Al Ain",
-    description: "Serving residential and commercial clients across Al Ain.",
-    image: "/al_ain_interior.png"
-  },
-  {
-    id: 2,
-    title: "Abu Dhabi",
-    description: "Transforming spaces in the heart of Abu Dhabi.",
-    image: "/abu_dhabi_interior.png"
-  },
-  {
-    id: 3,
-    title: "Dubai",
-    description: "Premium interior design services in Dubai.",
-    image: "/dubai_interior.png"
-  },
-  {
-    id: 4,
-    title: "Sharjah",
-    description: "Expert fit-out solutions for Sharjah residents.",
-    image: "/sharjah_interior.png"
-  },
-  {
-    id: 5,
-    title: "Ajman & Um al Quwain",
-    description: "Custom joinery and upholstery across the Northern Emirates.",
-    image: "/ajman_interior.png"
-  },
-  {
-    id: 6,
-    title: "Ras al Khaimah",
-    description: "Delivering bespoke design to Ras al Khaimah.",
-    image: "/rak_interior.png"
-  }
+  { id: 1, title: "Warehouse Racking", description: "Material handling systems for warehousing and storage facilities.", image: "/media/image-080.jpeg" },
+  { id: 2, title: "Supermarket Shelving", description: "Shelving and storage systems for distribution centres.", image: "/media/image-055.jpeg" },
+  { id: 3, title: "Mezzanine Flooring", description: "Mezzanine flooring with rack support for efficient storage.", image: "/media/image-066.jpeg" },
+  { id: 4, title: "Aluminium Fabrication", description: "Fabrication solutions planned around your operational needs.", image: "/media/image-070.jpeg" },
+  { id: 5, title: "Car Parking Sheds", description: "Shade structures and car parking sheds for practical protection.", image: "/media/image-060.jpeg" },
+  { id: 6, title: "Interior Decor", description: "Interior decor solutions to complete commercial environments.", image: "/media/image-076.jpeg" },
 ];
 
 export default function StickyFeatures() {
   return (
     <section id="features" className={styles.sectionContainer}>
       <div className="container">
-
-        {/* Top Split Layout */}
         <div className={styles.splitLayout}>
           <div className={styles.textContent}>
             <ScrollReveal direction="up" delay={0.1}>
-              <h2 className="section-title text-gradient" style={{ textAlign: 'left', margin: 0 }}>Our Service Area</h2>
+              <h2 className="section-title text-gradient" style={{ textAlign: "left", margin: 0 }}>Our Solutions</h2>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
               <p className={styles.description}>
-                WHERE ARE WE SERVE! We provide interior design and fit-out services across the UAE. Explore the regions we actively serve.
+                We plan and execute material handling systems for manufacturing, assembly, distribution centres, warehousing and storage facilities.
               </p>
             </ScrollReveal>
           </div>
           <div className={styles.imageContent}>
             <ScrollReveal direction="left" delay={0.2}>
-              <img src="/our-area.jpg" alt="Our Service Area" className={styles.mainImage} />
+              <img src="/media/image-080.jpeg" alt="Al Najim material handling and storage solutions" className={styles.mainImage} />
             </ScrollReveal>
           </div>
         </div>
 
-        {/* Movement Carts (Horizontal Slider) */}
         <ScrollReveal direction="up" delay={0.4}>
           <div className={styles.sliderContainer}>
-          <div className={styles.sliderTrack}>
-            {features.concat(features).map((feature, index) => (
-              <div key={`${feature.id}-${index}`} className={styles.slideCard}>
-                <img src={feature.image} alt={feature.title} className={styles.slideImage} />
-                <div className={styles.slideContent}>
-                  <h3 className={styles.slideTitle}>{feature.title}</h3>
-                  <p className={styles.slideDesc}>{feature.description}</p>
+            <div className={styles.sliderTrack}>
+              {features.concat(features).map((feature, index) => (
+                <div key={`${feature.id}-${index}`} className={styles.slideCard}>
+                  <img src={feature.image} alt={feature.title} className={styles.slideImage} />
+                  <div className={styles.slideContent}>
+                    <h3 className={styles.slideTitle}>{feature.title}</h3>
+                    <p className={styles.slideDesc}>{feature.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
         </ScrollReveal>
-
       </div>
     </section>
   );

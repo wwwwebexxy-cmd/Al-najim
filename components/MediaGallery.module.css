@@ -1,0 +1,81 @@
+.section {
+  background: linear-gradient(180deg, var(--background) 0%, var(--background-deep) 100%);
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.videoCard,
+.imageCard {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  background: var(--card-bg);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.videoCard figcaption,
+.imageCard figcaption {
+  padding: 0.8rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.imageCard {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.imageCard:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+}
+
+.imageCard img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .galleryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .videoGrid,
+  .galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .videoCard figcaption,
+  .imageCard figcaption {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.78rem;
+  }
+}

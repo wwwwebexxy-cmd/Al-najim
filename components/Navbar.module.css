@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   z-index: 50;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(4, 19, 33, 0.86);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--card-border);
 }
@@ -25,6 +25,21 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--foreground);
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.brandLogo {
+  display: block;
+  width: min(190px, 24vw);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.95));
 }
 
 .navLinks {
@@ -62,6 +77,10 @@
   
   .logo {
     font-size: 1.25rem;
+  }
+
+  .brandLogo {
+    width: min(155px, 48vw);
   }
 
   .mobileToggle {

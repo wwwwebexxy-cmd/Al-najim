@@ -12,25 +12,24 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         <div className={styles.logo}>
           <Link href="#home">
-            <img src="/logo-shapes-shade.png" alt="Shapes and Shades Logo" style={{ height: '60px', width: 'auto', display: 'block' }} />
+            <img src="/al-najim-logo.png" alt="Al Najim Al Satie Steel Shelfs Trading logo" className={styles.brandLogo} />
           </Link>
         </div>
 
-        {/* Mobile Toggle Button */}
         <button
           className={styles.mobileToggle}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? "✕" : "☰"}
+          {isOpen ? "X" : "Menu"}
         </button>
 
-        <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
+        <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ""}`}>
           <Link href="#home" className={styles.navLink} onClick={() => setIsOpen(false)}>Home</Link>
-          <Link href="#about" className={styles.navLink} onClick={() => setIsOpen(false)}>About</Link>
-          <Link href="#services" className={styles.navLink} onClick={() => setIsOpen(false)}>Service</Link>
-          {/* <Link href="#features" className={styles.navLink} onClick={() => setIsOpen(false)}>Why Choose Us</Link> */}
-          <Link href="#contact" className={styles.navLink} onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link href="#about" className={styles.navLink} onClick={() => setIsOpen(false)}>About Us</Link>
+          <Link href="#services" className={styles.navLink} onClick={() => setIsOpen(false)}>Products &amp; Services</Link>
+          <Link href="#projects" className={styles.navLink} onClick={() => setIsOpen(false)}>Projects</Link>
+          <Link href="#contact" className={styles.navLink} onClick={() => setIsOpen(false)}>Contact Us</Link>
         </div>
       </div>
     </nav>
