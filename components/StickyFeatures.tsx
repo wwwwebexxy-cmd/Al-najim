@@ -10,6 +10,9 @@ const features = [
   { id: 4, title: "Aluminium Fabrication", description: "Fabrication solutions planned around your operational needs.", image: "/media/image-070.webp" },
   { id: 5, title: "Car Parking Sheds", description: "Shade structures and car parking sheds for practical protection.", image: "/media/image-060.webp" },
   { id: 6, title: "Interior Decor", description: "Interior decor solutions to complete commercial environments.", image: "/media/image-076.webp" },
+  { id: 7, title: "Shearing", description: "Precision sheet-metal shearing for clean, accurate cuts.", image: "/media/service-shearing.webp" },
+  { id: 8, title: "Bending", description: "Accurate CNC press-brake bending for sheet-metal components.", image: "/media/service-bending.webp" },
+  { id: 9, title: "Lasering & Notching", description: "High-precision laser cutting and notching for complex shapes.", image: "/media/service-lasering-notching.webp" },
 ];
 
 export default function StickyFeatures() {
