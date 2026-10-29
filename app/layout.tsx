@@ -152,9 +152,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
-        <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
-        <link rel="icon" type="image/png" href="/icon.png?v=3" sizes="512x512" />
-        <link rel="apple-touch-icon" type="image/png" href="/apple-icon.png?v=3" sizes="512x512" />
+        <link rel="icon" href="/favicon.ico?v=4" sizes="any" />
+        <link rel="icon" type="image/png" href="/icon.png?v=4" sizes="512x512" />
+        <link rel="apple-touch-icon" type="image/png" href="/apple-icon.png?v=4" sizes="512x512" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}

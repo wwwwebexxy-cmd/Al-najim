@@ -24,7 +24,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #000;
+  background: var(--background-deep);
 }
 
 .serviceFilter {
@@ -59,7 +59,7 @@
   padding: 1rem;
   border: 1px solid var(--card-border);
   border-radius: 0.75rem;
-  background: rgba(7, 27, 49, 0.6);
+  background: rgba(8, 8, 7, 0.6);
 }
 
 .filterOption {
@@ -99,7 +99,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: contain;
-  background: #fff;
+  background: var(--foreground);
 }
 
 @media (max-width: 900px) {

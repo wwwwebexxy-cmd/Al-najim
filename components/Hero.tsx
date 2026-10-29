@@ -9,7 +9,7 @@ export default function Hero() {
           <div className={styles.overlayContent}>
             <ScrollReveal direction="up" delay={0.2}>
               <h1 className={styles.title}>
-                <span style={{ color: "white" }}>A Complete</span><br />
+                <span style={{ color: "var(--foreground)" }}>A Complete</span><br />
                 <span style={{ color: "var(--primary)" }}>Storage Solution</span>
               </h1>
             </ScrollReveal>
