@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={`container ${styles.container}`}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <img src="/al-najim-logo.png" alt="Al Najim Al Satie Steel Shelfs Trading logo" className={styles.logoImage} />
+            <img src="/al-najim-logo-horizontal.webp" alt="Al Najim Al Satie Steel Shelfs Trading logo" className={styles.logoImage} />
           </div>
           <p className={styles.description}>
             A Complete Storage Solution for material handling, warehousing and storage facilities.

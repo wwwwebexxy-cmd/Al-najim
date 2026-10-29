@@ -28,11 +28,15 @@
   color: var(--foreground);
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .logo a {
   display: flex;
   align-items: center;
+  width: max-content;
+  white-space: nowrap;
 }
 
 .brandLogo {

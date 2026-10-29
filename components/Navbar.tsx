@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         <div className={styles.logo}>
           <Link href="#home">
-            <img src="/al-najim-logo.png" alt="Al Najim Al Satie Steel Shelfs Trading logo" className={styles.brandLogo} />
+            <img src="/al-najim-logo-horizontal.webp" alt="Al Najim Al Satie Steel Shelfs Trading logo" className={styles.brandLogo} />
           </Link>
         </div>
 

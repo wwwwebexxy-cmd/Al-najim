@@ -24,6 +24,9 @@
   color: var(--foreground);
   display: inline-flex;
   align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  white-space: nowrap;
   margin-bottom: 1rem;
 }
 
