@@ -103,7 +103,7 @@ const jsonLd = {
       ],
       logo: "https://www.steelrack.co/al-najim-logo.png",
       url: "https://www.steelrack.co/",
-      telephone: ["+971507146645", "+971558219504", "+97165104993"],
+      telephone: ["+971507146645", "+971558219504"],
       email: ["najimsatiracks@gmail.com", "john.alnajim@gmail.com"],
       address: {
         "@type": "PostalAddress",

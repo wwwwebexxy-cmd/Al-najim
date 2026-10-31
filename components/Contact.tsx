@@ -1,6 +1,6 @@
 "use client";
 
-import { FaBuilding, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 import ScrollReveal from "./ScrollReveal";
 
@@ -31,12 +31,6 @@ export default function Contact() {
             <div className={styles.infoBlock}>
               <span className={styles.icon}><FaMapMarkerAlt /></span>
               <span className={styles.infoText}>Post Box: 1747 Sharjah, UAE</span>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal direction="right" delay={0.4}>
-            <div className={styles.infoBlock}>
-              <span className={styles.icon}><FaBuilding /></span>
-              <span className={styles.infoText}>Office: 06-510-4993</span>
             </div>
           </ScrollReveal>
         </div>

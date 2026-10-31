@@ -44,7 +44,6 @@ export default function Footer() {
         <div className={styles.linksGroup}>
           <h4 className={styles.columnTitle}>Office</h4>
           <span className={styles.link}>Post Box: 1747 Sharjah, UAE</span>
-          <span className={styles.link}>06-510-4993</span>
           <a href="#contact" className={styles.link}>Contact Us</a>
         </div>
       </div>
