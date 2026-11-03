@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import styles from "./ScrollMarquee.module.css";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -18,15 +19,17 @@ const ScrollMarquee = () => {
   useGSAP(
     () => {
       if (!textRef.current || !containerRef.current) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
       gsap.to(textRef.current, {
         xPercent: -50,
         ease: "none",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1,
+          start: "bottom bottom",
+          end: "top top",
+          scrub: 3,
+          invalidateOnRefresh: true,
         },
       });
     },
@@ -34,10 +37,10 @@ const ScrollMarquee = () => {
   );
 
   return (
-    <div ref={containerRef} className="relative w-full overflow-hidden brand-strip text-white py-12 md:py-24 2xl:py-32 flex items-center border-y">
-      <div ref={textRef} className="flex whitespace-nowrap font-black text-[15vw] uppercase leading-none tracking-tighter text-transparent" style={{ width: "fit-content", WebkitTextStroke: "2px white" }}>
+    <div ref={containerRef} className={`${styles.viewport} brand-strip text-white flex items-center border-y`}>
+      <div ref={textRef} className={styles.track}>
         <span className="pr-8 md:pr-16 lg:pr-24 2xl:pr-32">{marqueeText}</span>
-        <span className="pr-8 md:pr-16 lg:pr-24 2xl:pr-32">{marqueeText}</span>
+        <span aria-hidden="true" className="pr-8 md:pr-16 lg:pr-24 2xl:pr-32">{marqueeText}</span>
       </div>
     </div>
   );

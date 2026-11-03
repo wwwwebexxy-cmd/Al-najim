@@ -36,7 +36,6 @@ export default function Footer() {
 
         <div className={styles.linksGroup}>
           <h4 className={styles.columnTitle}>Contact</h4>
-          <a href="https://www.steelrack.co" target="_blank" rel="noopener noreferrer" className={styles.link}>www.steelrack.co</a>
           <a href="mailto:najimsatiracks@gmail.com" className={styles.link}>najimsatiracks@gmail.com</a>
           <a href="tel:+971507146645" className={styles.link}>+971 50 714 6645</a>
         </div>
